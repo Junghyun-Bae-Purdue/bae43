@@ -1,0 +1,25 @@
+File name: MMST_Dataset_J.Bae.xlsx
+
+Data Source: This dataset is a customized output format from the GEANT4 simulation.
+
+Description:
+1st Column: Material ID
+- 11, 12, 13, and 14 represent the scintillation panels or muon tracker 1, 2, 3, and 4 repsectively from top to bottom.
+- 0 represents "World" volume which is a surrounding volume which is comprised with air. 
+- 1, 2, 3, and 4 represents target materials, aluminum, steel, lead, and uranium samples, respectively.
+- Details of dimension of materials are described in the manuscript.
+
+2nd Column: Particle ID
+- 1 presents a muon.
+- 0 presents other particles, mostly photons.
+
+3rd, 4th, and 5th columns
+- They represent x, y, and z coordinates of a particle position in cm.
+- The type of particle can be found in 2nd column.
+
+6th Column: Muon Energy
+- It represents the muon energy in MeV.
+- No energy is recorded for other particles.
+- The initial muon energy follows the probability from a cosmic ray muon energy distribution.
+
+A new muon event is initiated when 5th column is returnted to 245 cm in which a particle gun initiates.
